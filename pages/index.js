@@ -1,5 +1,4 @@
 import MetaHead from '@/components/meta-head'
-import Head from 'next/head'
 
 export default function Home() {
   return (
@@ -7,8 +6,8 @@ export default function Home() {
       <MetaHead title="Home Page" />
       <main>
         <div>
-          <h1>Home Page</h1>
-          <p><i>Synapzi</i> basic template &rarr; Edit to get started!</p>
+          <h1 className="text-center text-4xl font-bold m-5">Home Page</h1>
+          <p className="text-center m-2"><i>Synapzi</i> basic template &rarr; Edit to get started!</p>
         </div>
       </main>
     </>
