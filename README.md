@@ -4,7 +4,7 @@
 
 1. [Description](#description)
 2. [Understand the Infrastructure](#understand-the-infrastructure)
-3. [Local Set-up](#local-set-up)
+3. [Download the Code](#download-the-code)
 4. [Contributing](#contributing)
 
 <a name="description"></a>
@@ -17,25 +17,45 @@ This project is a template for `<insert project description here>`. Feel free to
 
 ## Understand the Infrastructure 🏗️
 
-The project is built on `<insert technology stack here>`. The system consists of the following main components:
+The project is built using Next.js and many other Node libraries help us give functionality. The system consists of the following main components:
 
-1. **Next.js**: Briefly describe the purpose of this component.
-2. **AWS**: Briefly describe the purpose of this component.
-3. **Firebase**: Briefly describe the purpose of this component.
+1. **Next.js**: Framework for building React websites.
+2. **GitHub**: Version control system for the project.
 
-You can edit this section to provide a brief description of your project's infrastructure and how it works together to achieve the desired functionality.
+The libraries used in production are the following:
 
-<a name="local-set-up"></a>
+| **Library**                         | **Description**                                |
+| ----------------------------------- | ---------------------------------------------- |
+| `@headlessui/react`                 | UI components without styles for React         |
+| `@heroicons/react`                  | Set of SVG icons for React apps                |
+| `react-gtm-module`                  | Google Tag Manager module for React            |
+| `react-icons`                       | Icon library for React                         |
 
-## Download the code ⬇️
+The libraries used in development are the following:
+
+| **Library**                | **Description**                                                                  |
+| -------------------------- | -------------------------------------------------------------------------------- |
+| `@next/eslint-plugin-next` | ESLint plugin for Next.js                                                        |
+| `autoprefixer`             | PostCSS plugin to parse CSS and add vendor prefixes                              |
+| `eslint`                   | Tool for identifying and reporting on patterns in JavaScript (uses many plugins) |
+| `husky`                    | Git hooks made easy                                                              |
+| `lint-staged`              | Run linters against staged git files                                             |
+| `postcss`                  | Tool for transforming CSS with JavaScript (used by Tailwind CSS)                 |
+| `prettier`                 | Opinionated code formatter                                                       |
+| `tailwindcss`              | Utility-first CSS framework for styling                                          |
+
+<a name="download-the-code"></a>
+
+## Download the Code ⬇️
 
 This project uses NextJS with npm for development. To set up the project locally, follow these steps:
 
 1. Clone the repository: `git clone https://github.com/<your-username>/<repository-name>.git`
 2. Navigate to the project directory: `cd <repository-name>`
 3. Install the dependencies: `npm install`
-4. Run the development server: `npm run dev`
-5. Open your browser and navigate to `http://localhost:3000` to view the project.
+4. Install initialize husky: `npm run prepare`
+5. Run the development server: `npm run dev`
+6. Open your browser and navigate to `http://localhost:3000` to view the project.
 
 <a name="contributing"></a>
 
