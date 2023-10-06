@@ -1,6 +1,7 @@
 # Project Name
 
 ## Table of Contents
+
 1. [Description](#description)
 2. [Understand the Infrastructure](#understand-the-infrastructure)
 3. [Local Set-up](#local-set-up)
