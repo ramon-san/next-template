@@ -15,7 +15,11 @@ export default function App({ Component, pageProps }) {
 
   return (
     <>
-      <Component {...pageProps} />
+      {/* Add Navbar here */}
+      <main>
+        <Component {...pageProps} />
+      </main>
+      {/* Add Footer here */}
     </>
   );
 }
