@@ -6,9 +6,7 @@ export default function PrivacyPolicy() {
       <MetaHead />
       <div>
         <h1 className="text-center text-4xl font-bold m-5">Privacy Policy</h1>
-        <p className="text-center m-2">
-          Write your privacy policy...
-        </p>
+        <p className="text-center m-2">Write your privacy policy...</p>
       </div>
     </>
   );

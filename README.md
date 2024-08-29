@@ -2,20 +2,36 @@
 
 ## Table of Contents
 
-1. [Description](#description)
-2. [Understand the Infrastructure](#understand-the-infrastructure)
-3. [Download the Code](#download-the-code)
-4. [Contributing](#contributing)
+- [Description](#description)
+- [Understand the Infrastructure](#understand-the-infrastructure)
+- [Download the Code](#download-the-code)
+- [Contributing](#contributing)
 
-<a name="description"></a>
+## Directory Structure
 
-## Description ℹ️
+```
+web_app/
+├── .husky/                   # Husky configuration files
+├── public/                   # Static files that are served directly
+├── components/               # All components written in React with Tailwind CSS
+├── pages/
+│   ├── _app.ts               # Holds the global styles and layout for all pages
+│   └── _document.ts          # Holds the HTML document structure
+├── constants/
+│   └── metadata.json         # Metadata used for HTML head tags
+├── styles/
+│   └── globals.css           # Global styles for the project
+├── .eslintrc.js              # ESLint configuration file
+├── .prettierrc               # Prettier configuration file
+├── postcss.config.js         # PostCSS configuration file
+└── tailwind.config.js        # Tailwind CSS configuration file
+```
+
+## Description
 
 This project is a template for `<insert project description here>`. Feel free to edit this section to describe the main purpose and features of your project.
 
-<a name="understand-the-infrastructure"></a>
-
-## Understand the Infrastructure 🏗️
+## Understand the Infrastructure
 
 The project is built using Next.js and many other Node libraries help us give functionality. The system consists of the following main components:
 
@@ -24,12 +40,12 @@ The project is built using Next.js and many other Node libraries help us give fu
 
 The libraries used in production are the following:
 
-| **Library**                         | **Description**                                |
-| ----------------------------------- | ---------------------------------------------- |
-| `@headlessui/react`                 | UI components without styles for React         |
-| `@heroicons/react`                  | Set of SVG icons for React apps                |
-| `react-gtm-module`                  | Google Tag Manager module for React            |
-| `react-icons`                       | Icon library for React                         |
+| **Library**         | **Description**                        |
+| ------------------- | -------------------------------------- |
+| `@headlessui/react` | UI components without styles for React |
+| `@heroicons/react`  | Set of SVG icons for React apps        |
+| `react-gtm-module`  | Google Tag Manager module for React    |
+| `react-icons`       | Icon library for React                 |
 
 The libraries used in development are the following:
 
@@ -44,9 +60,7 @@ The libraries used in development are the following:
 | `prettier`                 | Opinionated code formatter                                                       |
 | `tailwindcss`              | Utility-first CSS framework for styling                                          |
 
-<a name="download-the-code"></a>
-
-## Download the Code ⬇️
+## Download the Code
 
 This project uses NextJS with npm for development. To set up the project locally, follow these steps:
 
@@ -57,9 +71,7 @@ This project uses NextJS with npm for development. To set up the project locally
 5. Run the development server: `npm run dev`
 6. Open your browser and navigate to `http://localhost:3000` to view the project.
 
-<a name="contributing"></a>
-
-## Contributing 💻
+## Contributing
 
 We appreciate your interest in contributing to the project. To contribute code without forking the repository, follow these best practices:
 
